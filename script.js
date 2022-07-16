@@ -2,13 +2,14 @@
     function() 
     {
     let playRounds = 5;
-    let playerScore, computerScore = 0;
+    let playerScore = 0;
     let playStatus = "On";
+    let computerScore = 0;
     // An arrow function expression has a shorter syntax compared to function expressions and lexically binds the this value
     const numbers = () => 
     {
       // would be the number of possible options starting from 3
-      let rand = Math.floor(Math.random() * 3);
+      let rand = Math.floor(Math.random()*3);
       return rand;
     };
     const computerPlay = () => 
@@ -25,7 +26,7 @@
     {
       if (changePlayer === computerSelection) 
       {
-        return console.log("Draw!,try again");
+        return console.log("Draw,try again");
       }
       if (computerSelection === "rock") 
       {
