@@ -16,3 +16,6 @@ Link with assignment: https://angelikamarciniak.github.io/JavaScript-assignment/
 - JavaScript
 - HTML
 
+#Example of my tourn:
+
+![example](https://user-images.githubusercontent.com/104442170/179786050-ce193088-5324-4603-a8a0-d5ae957500da.png)
