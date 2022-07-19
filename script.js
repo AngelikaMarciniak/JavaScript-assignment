@@ -1,15 +1,11 @@
 (
     function() 
     {
-    let playRounds = 5;
-    let playerScore = 0;
-    let playStatus = "On";
-    let computerScore = 0;
     // An arrow function expression has a shorter syntax compared to function expressions and lexically binds the this value
     const numbers = () => 
     {
       // would be the number of possible options starting from 3
-      let rand = Math.floor(Math.random()*3);
+      let rand = Math.floor(Math.random() * 3);
       return rand;
     };
     const computerPlay = () => 
@@ -30,7 +26,7 @@
       }
       if (computerSelection === "rock") 
       {
-        // referencing method
+        // used recursion to find a winner
         switch (changePlayer) 
         {
           case "paper":
@@ -42,7 +38,8 @@
             return console.log(`You lose: ${computerSelection} beats ${changePlayer}`);
             break;
         }
-      } else if (computerSelection === "paper")
+      } 
+        else if (computerSelection === "paper")
        {
         switch (changePlayer)
          {
@@ -71,15 +68,19 @@
         }
       }
     };
+    let playRounds = 5;
+    let playerScore = 0;
+    let computerScore = 0;
     const playRound = () => 
     {
       // The prompt() method displays a dialog box that prompts the user for input
-      let playerSelection = prompt("Rock, paper and scissors?");
+      let playerSelection = prompt("Rock, paper or scissors?");
       if (!playerSelection) 
       {
         playRounds++
         return alert("Write rock, paper or scissors");
       }
+      // The some() method checks if any array elements pass a test
       let changePlayer = changeString(playerSelection);
       if (!["rock", "paper", "scissors"].some(el => el === changePlayer)) 
       {
@@ -89,6 +90,7 @@
       let computerSelection = computerPlay();
       winnerCheck(changePlayer, computerSelection);
     };
+    let playStatus = "On";
     const checkStatus = () => 
     {
       if (computerScore === playerScore) {
@@ -114,7 +116,6 @@
       for (let i = 0; i < playRounds; i++) 
       {
         playRound();
-        console.log(`playerScore is ${playerScore}, computerScore is ${computerScore}`);
       }
       checkStatus();
     };
@@ -124,11 +125,11 @@
     }
     if (computerScore > playerScore) 
     {
-      console.log(`You lost with score ${playerScore}:${computerScore}`);
+      console.log(`You lost ${playerScore}:${computerScore}`);
     } 
     else if (playerScore > computerScore) 
     {
-      console.log(`You won with score ${playerScore}:${computerScore}`);
+      console.log(`You won ${playerScore}:${computerScore}`);
     }
   }
   )
