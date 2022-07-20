@@ -1,22 +1,22 @@
 # JavaScript-assignment
  The repository contain an assignment for an Brainnest Course - Frontend development industry training.
- It is a game "Rock, paper, scissors" made in Java Script language which you can play from the browser console. The game has 5 rounds where you will confront the computer
+ It is a game "Rock, paper, scissors" made in Java Script language which you can play from the browser console. The game has 5 rounds where you will confront the computer.
 
 Link with assignment: https://angelikamarciniak.github.io/JavaScript-assignment/ 
 
-#Describtion of assignment below:
+# Describtion of assignment below:
 
 ![desc](https://user-images.githubusercontent.com/104442170/179781284-8a51f826-f962-48ff-9d60-67c87bf5ecf3.png)
 
-#Technologies used:
+# Technologies used:
 - git
 - github
 - Visual Studio Code
 
-#Languages used:
+# Languages used:
 - JavaScript
 - HTML
 
-#Example of my play:
+# Example of my turn:
 
 ![example](https://user-images.githubusercontent.com/104442170/179786050-ce193088-5324-4603-a8a0-d5ae957500da.png)
